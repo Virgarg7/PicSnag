@@ -1,3 +1,8 @@
+![HomePage](https://github.com/Virgarg7/PicSnag/assets/98869884/d0216db6-4926-4a98-8e0c-c182b7606497)
+![image](https://github.com/Virgarg7/PicSnag/assets/98869884/dfa219cc-9281-455e-8d72-522344e0fe65)
+![image](https://github.com/Virgarg7/PicSnag/assets/98869884/82e10a69-9bff-41d0-99b7-ea957218b0f4)
+
+
 # PicSnag
 PicSnag is an image extractor application built using Node.js, Express.js, MongoDB, and the EJS templating engine. The purpose of the application is to allow users to extract information from images and manage those extracted details in a database.
 
