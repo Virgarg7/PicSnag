@@ -1,0 +1,56 @@
+<%- include('layout/header')  %>
+
+<style>
+    .form-box {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        color:black; /* Set text color to white */
+    }
+    
+    .form-box .form-control {
+        background-color:white;
+        border-color: #666;
+    }
+    
+    .form-box .btn-primary {
+        background-color: black;
+        border-color: white;
+        border-radius: 10%;
+    }
+</style>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col">
+            <div class="form-box my-4">
+                <h2 class="text-center mb-4">Add New Users</h2>
+                <form action="/add" method="post" id="add-form" enctype="multipart/form-data" >
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Select Image</label>
+                        <input type="file" class="form-control form-control-lg" name="image" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add New User</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include('layout/footer')  %>

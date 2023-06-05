@@ -1,0 +1,208 @@
+<%- include('layout/header') %>
+
+<style>
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Header Styles */
+    .hero {
+        background-color: #e9e9e9;
+        padding: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    /* Content Styles */
+    h2 {
+        font-size: 44px;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 30px;
+        margin-top: 1px;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+
+    li {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    /* Features Styles */
+    .feature-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .feature-icon {
+        background-color: #333;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .feature-icon i {
+        font-size: 19px;
+    }
+
+    /* Testimonials Styles */
+    .testimonial {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .testimonial-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .testimonial-content {
+        flex: 1;
+    }
+
+    .testimonial-content p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-author {
+        font-size: 14px;
+        color: #999;
+    }
+</style>
+
+<main class="about-page">
+        <section class="hero">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Welcome to our image extractor website!</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>We aim to provide a simple and efficient way to extract images from various sources.</p>
+
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>We offer a user-friendly interface for easy image extraction.</li>
+                    <li>Our image extraction algorithm ensures accurate results.</li>
+                    <li>Quick and efficient image extraction process.</li>
+                    <li>We support multiple file formats, including JPG, PNG, and GIF.</li>
+                    <li>Responsive customer support for any queries or issues.</li>
+                </ul>
+
+                <h2>Contact Us</h2>
+                <p>If you have any questions or feedback, please feel free to reach out to us.</p>
+                <p>Email: info@imageextractor.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Advanced Search</h3>
+                    <p>Effortlessly search and extract images from websites with our advanced search capabilities.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Easy Download</h3>
+                    <p>Download the extracted images with a single click and save them to your preferred location.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Upload and Extract</h3>
+                    <p>Upload your own images and extract valuable information from them using our advanced image
+                        processing algorithms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="/views/image.png" alt="User 1">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"I've been using the image extractor website for my projects, and it has made my work so much
+                            easier. Highly recommended!"</p>
+                        <p class="testimonial-author">- John Doe</p>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-image">
+                        <img src="/images/user2.jpg" alt="User 2">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The image extraction process is quick and accurate. The website has a clean and intuitive
+                            interface, making it a pleasure to use."</p>
+                        <p class="testimonial-author">- Jane Smith</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('layout/footer') %>

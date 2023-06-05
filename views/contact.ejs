@@ -1,0 +1,185 @@
+<%- include('layout/header') %>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .hero {
+        background-color: #f1f1f1;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .contact-details {
+        padding: 20px;
+        background-color: #eaeaea;
+    }
+
+    .contact-details h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .contact-details p {
+        margin-bottom: 5px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    button[type="submit"] {
+        background-color: black;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 15px;
+        border-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: flex;
+    }
+
+    .footer-icon {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-links {
+        text-align: right;
+    }
+
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+
+<main class="contact-page">
+    <section class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or feedback, please feel free to reach out to us.</p>
+        </div>
+    </section>
+
+    <section class="contact-details">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <p>Email: info@imageextractor.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/" class="footer-icon">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.whatsapp.com/" class="footer-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.google.com/" class="footer-icon">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="footer-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<%- include('layout/footer') %>

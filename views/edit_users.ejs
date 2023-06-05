@@ -1,0 +1,64 @@
+<%- include('layout/header') %>
+
+<style>
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-box .form-control {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #333;
+  }
+
+  .form-box .btn-primary {
+    background-color: #000;
+    border-color: #000;
+    border-radius: 5px;
+  }
+</style>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title text-center mb-4">Edit User (<%= user.name %>)</h2>
+          <form action="/update/<%= user._id %>" method="post" id="add-form" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Enter your name" value="<%= user.name %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="Enter your email" value="<%= user.email %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number" value="<%= user.phone %>" required>
+            </div>
+            <div class="mb-3">
+              <label for="image" class="form-label">Select Image</label>
+              <input type="file" class="form-control" name="image" />
+              <img src="<%= user.image %>" width="100" class="img-thumbnail mt-2">
+            </div>
+            <input type="hidden" name="old_image" value="<%= user.image %>">
+            <div class="d-grid">
+              <button type="submit" name="submit" class="btn btn-primary btn-lg">Update User</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('layout/footer') %>
